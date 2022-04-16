@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Todo List</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=xP7mlzOZgH1LZSxiIgyQmbxb9Xj2YWkJxjG-z7HhNVYAIpscu3VqpBUrL87aHpYSe-A5h3Ln8CjFiP1YZMofuQ8zk4gKOSl7gxXPH7kYmtoV-EpXrHntnp3uR69npHKasW39SjjtQFQ_-GqvBeUqrmXh4-9Q7s_jQr3k5liL7ova-N3_UqahJFoQOJf0hLJsuDizSt49kuR6CCbeMdKqSMEL3_uoCiVtTbRt8c0hGGqGiiOkzGP9HefOqkjWfUhYmIM67-eTZUzY9pJEST3UapydAOYECS83xmtK5R_ldu4XqwKnjqBqrA96chsK9J7GjaCVC3cPcB7UFkiJAQ5-UxL-8I5OIPVLvStWcSghW4q7hKB4wqU-jLb5m14ZWQ5K8EoLHammyzgG-5m8XYcNs4X3Qwcu5TBnQgqWgH9TkbQXzZ529KM3XlgytX9tiLLUapualLhgWemmJqMWrjovFJJ3WR9hPSs0fSJMOXQ62uaBECZNGXk1vMEj-OA1ufmQm5K2TwSlAhkvhuKWNS5iKSXr2sYGMREcPg2YZ8jpigTR7CahF9ICBwbmyK0K1vZzZNGSiJYUQMmHbrveNkJa9cUyt5oPVtMaBzs8bOU9VmVT552BnIyBEgP42LufKG_6VY_lGnwPYoOSNbSD8XTE9h7-9JHRN8eKVribMvEG1Nm4dq4MmbPI2ZvLAvmY9CZPZ0y3cJgecUt7ve1BDwo124ysAGkmxk72gyuK1KWD8fMcLkI4E0gZUgmaKKWcU5Xz88-QT3KLXjpkTOHFwLhMRg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9hdHQtYy51ZGVteWNkbi5jb20vMjAxOC0xMC0yNF8xMy00MS0zOS01ZTdjM2YxYzIwNGQ2NzA1YWM1NWQ1NWQ5Mjc4ODhiZi9vcmlnaW5hbC5odG1sP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249YXR0YWNobWVudCUzYiUyMGZpbGVuYW1lJTNkaW5kZXguaHRtbCZFeHBpcmVzPTE2NTAwNDE3OTEmU2lnbmF0dXJlPWhuSHhrcjRxWEtycUFCTTZqd3VyUE9JTkxVRzFWa0tZcUNiaEQ5MzA0b1ZlfmRmeDF6TFI5N0x-eWp6WUFYVkpja2tHblktVmNXVkJKNENadHlGR2xsQmR-Ykh2bmFyc1pOdGFjLTJzaGI0QVlxVWMydkQ1Zk9VcVY3U0tzNDFLdDFzeVNDbkl1U2UxME1-dGVzfmtNdk9qRXgtbElCWHBXWkptamgtSUxTRH5pYWZDa2lMYUFTflhMWG5YbVhMb0FxMjBCajBNQ2VQdWxyR1VsV3BQRX5LNEt4RGFTSXlLZ0QyVTJSbDFSRlozVzJlZ1FpMklMbnhncU9pdFpTLW9ZcHIxWDNhcHpaeUVZNXJOcHRnSndCWHNla045THF-MDJIOGdwLTJvNC0wN0U5UTBpSzZHOVBNWFhVTDBIRWRhQURNU280blhxMW9ET1AwaERtQlEyQV9fJktleS1QYWlyLUlkPUFQS0FJVEpWNzdXUzVaVDcyNjJB"/></head>
+<body>
+    <div class="container" style ="margin-top:20px;">
+                                     
+        <div class="card row">
+            <div class="card-header">Todo List</div>
+            <div class="card-body">
+                    <form id = "todo-form" name="form">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input class="form-control" type="text" name="todo" id = "todo" placeholder="Bir Todo Girin">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Todo Ekleyin</button>
+                    </form>
+                    <hr>
+                    
+                
+             </div>
+         
+             <div class="card-body">
+                    <hr>
+                    <h5 class="card-title" id = "tasks-title">Todolar</h5>
+                    <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input class="form-control" type="text" name="filter" id = "filter" placeholder="Bir Todo Arayın">
+                            </div>
+                    </div>
+
+                    <hr>
+                    <ul class="list-group">
+                        <!-- <li class="list-group-item d-flex justify-content-between">
+                            Todo 1
+                            <a href = "#" class ="delete-item">
+                                <i class = "fa fa-remove"></i>
+                            </a>
+
+                        </li>-->
+
+                        
+                    </ul>
+                    <hr>  
+                    <a id = "clear-todos" class="btn btn-dark" href="#">Tüm Taskları Temizleyin</a>               
+                </div>
+              </div>
+        
+    </div>
+
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
