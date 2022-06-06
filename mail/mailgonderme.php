@@ -114,7 +114,7 @@ $message= 'Form gönderimi hatalı. Tekrar deneyiniz. !';
 			
 } else {
 $message = 'Bilgiler tarafımıza ulaşmıştır.<br/> En kısa sürede tarafınıza dönüş sağlanacaktır.';
-header('Location:https://tisert.com.tr/iletisim.php');
+header('Location:');
 }
 /* mail */	
 
