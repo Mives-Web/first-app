@@ -30,7 +30,7 @@ $mail->Body = '
 <center>
 <table style="width:630px;">
 <tr>	
-<center>	<td bgcolor="#FFFFFF"><img style="margin-top:25px;" src="https://tisert.com.tr/img/tisert-logo.png" width="250"></td></center>
+<center>	<td bgcolor="#FFFFFF"><img style="margin-top:25px;" src="https://png.pngtree.com/element_our/png_detail/20180911/background-material-design-for-lorem-ipsum-logo-png_89689.jpg" width="250"></td></center>
 </tr>
 <tr>
 <td bgcolor="#FFFFFF" style="padding: 30px;">
