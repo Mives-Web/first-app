@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.myHeader {
+  background-color: #0153a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.searchBar {
+  display: inline-block;
+  width: 35%;
+}
+
+.kategori {
+  position: relative;
+  display: inline-block;
+  width: 125px;
+}
+.katHead {
+  width: 100px;
+  padding: 7px 5px;
+  border-radius: 5px 5px 0 0;
+}
+.kategori:hover .katHead {
+  background: white;
+  color: #0153a6;
+}
+.kategori:hover .katBody {
+  display: inline-block;
+}
+.katBody {
+  position: absolute;
+  width: 250px;
+  background-color: white;
+  color: #0153a6;
+  font-size: 14px;
+  display: none;
+  border-radius: 0px 0px 5px 0px;
+  z-index: 999;
+  border: 1px solid #f1f1f1;
+  border-top: none;
+}
+.nav-item .active {
+  background-color: white !important;
+  color: #0a58ca !important;
+}
+.menuTabs {
+  border-bottom: 1px solid #f1f1f1;
+}
+.dul {
+  margin: 0 !important;
+  padding: 0 21px !important;
+}
+li {
+  list-style: none;
+}
+
+.logo {
+  width: 10%;
+}
+.bars {
+  display: inline-block;
+  width: 275px;
+  text-align: center;
+}
+.birinci,
+.ikinci {
+  width: 49%;
+  display: inline-block;
+}
+.bars .fas {
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 50%;
+  width: 35px;
+  line-height: 30px;
+  text-align: center;
+  color: #0a58ca;
+}
+.midMenu {
+  background-color: #0153a6;
+  display: block;
+  height: 550px;
+}
+.demos .row {
+  max-width: auto !important;
+}
